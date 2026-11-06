@@ -24,8 +24,8 @@ function Truck({controls,onHUD}:{controls:Controls;onHUD:(v:HUD)=>void}){
   <mesh position={[0,1.65,-1.05]} castShadow><boxGeometry args={[2.18,1.15,2.1]}/><meshStandardMaterial color="#b73b2e" metalness={.22} roughness={.4}/></mesh>
   <mesh position={[0,1.83,-2.12]}><boxGeometry args={[1.98,.67,.06]}/><meshStandardMaterial color="#8cbac8" metalness={.2} roughness={.18}/></mesh>
   <mesh position={[0,1.08,-2.18]}><boxGeometry args={[2.1,.16,.12]}/><meshStandardMaterial color="#d9d6ca"/></mesh>
-  <mesh position={[-.88,1.2,-2.22}><boxGeometry args={[.16,.32,.08]}/><meshStandardMaterial color="#fff0bd" emissive="#a87930"/></mesh>
-  <mesh position={[.88,1.2,-2.22}><boxGeometry args={[.16,.32,.08]}/><meshStandardMaterial color="#fff0bd" emissive="#a87930"/></mesh>
+  <mesh position={[-.88,1.2,-2.22]}><boxGeometry args={[.16,.32,.08]}/><meshStandardMaterial color="#fff0bd" emissive="#a87930"/></mesh>
+  <mesh position={[.88,1.2,-2.22]}><boxGeometry args={[.16,.32,.08]}/><meshStandardMaterial color="#fff0bd" emissive="#a87930"/></mesh>
   <mesh position={[0,2.28,-.95]}><boxGeometry args={[2.12,.08,1.5]}/><meshStandardMaterial color="#24292c"/></mesh>
   <group ref={tire}>{[-1.12,1.12].flatMap(x=>[-.8,1.65].map(z=><group key={x+':'+z} position={[x,.5,z]}><mesh rotation={[0,0,Math.PI/2]} castShadow><cylinderGeometry args={[.47,.47,.28,18]}/><meshStandardMaterial color="#151819"/></mesh><mesh rotation={[0,0,Math.PI/2]}><cylinderGeometry args={[.2,.2,.3,16]}/><meshStandardMaterial color="#aeb5b5" metalness={.7}/></mesh></group>))}</group>
   <mesh position={[0,.17,2.35]}><boxGeometry args={[2.3,.25,.2]}/><meshStandardMaterial color="#d0c6ae"/></mesh>
